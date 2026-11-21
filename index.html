@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Vasu Gupta – Backend engineer (Java, Spring Boot) and AI/LLM builder. Portfolio, projects and résumé." />
+    <meta name="author" content="Vasu Gupta" />
+    <title>Vasu Gupta</title>
+    <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css?v=20" />
+    <script>
+      // Apply the saved (or system) theme before first paint so the page never flashes the wrong colours
+      (function () {
+        var saved = null;
+        try { saved = localStorage.getItem("theme"); } catch (e) {}
+        var dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+      <i class="fa fa-moon-o" aria-hidden="true"></i>
+    </button>
+
+    <!-- Hero -->
+    <div id="particles-js">
+      <div class="header">
+        <h1>
+          <span class="site-title"></span>
+          <span class="site-description"></span>
+        </h1>
+        <div class="header-icons"></div>
+        <nav class="header-links">
+          <a class="link" href="#about">About Me</a>
+          <a class="link" href="#experience">Experience</a>
+          <a class="link" href="#projects">Projects</a>
+        </nav>
+      </div>
+      <a class="down" href="#about" aria-label="Scroll down"><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+      <div class="user-details">
+        <h1>My Story</h1>
+        <img class="profile-photo" src="" alt="" />
+        <div class="story"></div>
+      </div>
+      <div class="user"></div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="user-details">
+        <h1>Experience</h1>
+      </div>
+      <div class="experience-list"></div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="user-details">
+        <h1>Featured Projects</h1>
+      </div>
+      <div class="project-list"></div>
+    </section>
+
+    <footer class="footer"><p></p></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./assets/js/data.js?v=20"></script>
+    <script src="./assets/js/main.js?v=20"></script>
+  </body>
+</html>
